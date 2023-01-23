@@ -86,9 +86,20 @@ document.querySelector('.buttons').onclick = (event) => {
 }
 console.log(3)
 
-function changeColour () {
-    let changeBlock = document.querySelector( ".multy" );
-    changeBlock.style.background = "black";
+// function changeColour () {
+//     let changeBlock = document.querySelector( ".multy" );
+//     changeBlock.style.background = "black";
+// }
+
+// document.querySelector('.multy').onclick = changeColour;
+
+ function changeColour () {
+    let changeBlock = document.querySelector('.multy');
+    let x = parseInt(Math.random()*256)
+    let y = parseInt(Math.random()*256)
+    let z = parseInt(Math.random()*256)
+    let color = `rgb(${x},${y},${z})`
+    changeBlock.style.background = color
 }
 
 document.querySelector('.multy').onclick = changeColour;
