@@ -85,3 +85,10 @@ document.querySelector('.buttons').onclick = (event) => {
     }
 }
 console.log(3)
+
+function changeColour () {
+    let changeBlock = document.querySelector( ".multy" );
+    changeBlock.style.background = "black";
+}
+
+document.querySelector('.multy').onclick = changeColour;
